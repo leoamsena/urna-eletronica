@@ -9,9 +9,14 @@
  *Teclado Matricial 4x3 12 teclas conectado aos pinos {[COLUNAS -> A4, 7, 8] e [LINHAS ->  A0, A1, A2, A3] }
  *
  *ATENÇÃO:
- *O código foi criado e moldado para realização de eleição em uma unidade da SSVP (http://www.ssvpbrasil.org.br/ || https://www.ssvpglobal.org/) e o 
- *uso de logomarcas foi previamente autorizado por responsáveis da instituição. Para se adequar ao sua situação É INDISPENSÁVEL que o plano de fundo da "page0" 
- *do display Nextion seja alterado. O uso não autorizado de simbolos da instituição em questão podem ocasionar ações legais cabíveis. 
+ *Para perfeito funcionamento do código se faz necessário a ciração de um projeto no "Nextion Editor" (https://nextion.itead.cc/resources/download/nextion-editor/)
+ *No projeto em questão deverão estar presentes 3 'pages':
+ *page 0 : passwordInput -> Text (para inserção da senha de liberação da urna)
+ *page 1: candNumber -> Text (para inserção do número digitado pelo usuário no momento da votação)
+ *             p0 -> Picture (para exibir a foto do candidato escolhido)
+ *page 2: result -> Text (para exibição do resultado)       
+ *
+ *Qualquer dúvida quanto a utilização do código entre em contato com o autor.
  *
  *
  * @author  Leonardo Amorim de Sena (email:<leonardo123.amorim@gmail.com>)
@@ -124,6 +129,9 @@ void loop() {
 					}
           if(votou){
             aguardandoLiberacao();
+          }else{
+            lcd.clear();
+            delay(200);
           }
            //aqui chega dibas
 					numero = 0;
