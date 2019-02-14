@@ -1,10 +1,10 @@
-# Project Title
+# Urna Eletr√¥nica em Ardu√≠no
 
-Urna eletrÙnica utilizando Arduino
+Urna eletr√¥nica utilizando Arduino
 
 ## Getting Started
 
-Esse projeto visa a implementaÁ„o de uma urna eletrÙnica utilizando Ardunio.
+Esse projeto visa a implementa√ß√£o de uma urna eletr√¥nica utilizando Ardunio.
 
 ### Prerequisites
  *Auto-falante conectado ao pino 9
